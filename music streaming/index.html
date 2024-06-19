@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Discover & Enjoy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Playlists</a></li>
+                    <li><a href="#">My Library</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button id="signinBtn">Sign In</button>
+                <button id="loginBtn">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to our Music Streaming Service</h2>
+            <p>Explore millions of songs and playlists curated just for you.</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-music fa-3x"></i>
+                <h3>Endless Music</h3>
+                <p>Access to a vast library of music across genres.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headphones fa-3x"></i>
+                <h3>High Quality Audio</h3>
+                <p>Enjoy crystal-clear audio quality.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+                <h3>Listen Anywhere</h3>
+                <p>Stream music on your phone, tablet, or computer.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Music Streaming Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Sign In -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
